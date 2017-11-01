@@ -93,3 +93,15 @@
 (print-crlf)
 (fibonacci 15)
 (last (stream->listn fibs 16))
+
+
+
+(define triangular (scale-stream (mul-streams (add-streams ones integers) integers) (/ 1 2)))
+
+(stream->listn triangular 100)
+
+; n(2(n-1)+1)
+
+(define hexagonal (mul-streams integers (scale-stream ) )
+
+(stream->listn triangular 100)
